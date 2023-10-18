@@ -126,8 +126,6 @@ public class SeleniumTestMethods {
     public static void validateAutoRenewal(int iterations){
         float availabledata = Float.parseFloat(availabledataafterrun);
         float totaldatainiterations = iterations*2;
-//        float expecteddata = Float.parseFloat(availabledatabeforerun)-totaldatainiterations;
-//        Assert.assertNotEquals(expecteddata,availabledataafterrun);
         Assert.assertEquals(availabledatabeforerun,availabledataafterrun);
         System.out.println("Total data consumed: "+ totaldatainiterations+" GB");
     }

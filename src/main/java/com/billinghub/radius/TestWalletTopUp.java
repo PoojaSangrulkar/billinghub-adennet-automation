@@ -95,7 +95,6 @@ public class TestWalletTopUp {
         Assert.assertEquals(("RY"+tra+"0"),walletbalance.replaceAll(",",""));
     }
     public static void validateWalletBalanceAfterAutorenewal() throws InterruptedException {
-        //driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[3]/div[3]/div[1]/div/div[2]/table/tbody/tr/td/a")).click();
         Thread.sleep(2000);
         String walletbalance = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[3]/div[3]/div[2]/div/div[9]/div/table/tbody/tr[11]/td[2]")).getText();

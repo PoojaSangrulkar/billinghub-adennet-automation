@@ -136,14 +136,6 @@ public class AutoRenewal {
 
             if(inputGigawords > 0 || outputGigawords > 0){
 
-             /*   if(accountingRequest.getAttribute("Acct-Input-Gigawords")!=null){
-                    accountingRequest.removeAttribute(accountingRequest.getAttribute("Acct-Input-Gigawords"));
-                }
-
-                if(accountingRequest.getAttribute("Acct-Output-Gigawords")!=null){
-                    accountingRequest.removeAttribute(accountingRequest.getAttribute("Acct-Output-Gigawords"));
-                }*/
-
                 accountingRequest.addAttribute("Acct-Input-Gigawords", String.valueOf(inputGigawords));
                 accountingRequest.addAttribute("Acct-Output-Gigawords", String.valueOf(outputGigawords));
             }

@@ -148,19 +148,6 @@ public class RadiusTestClientSelenium {
             accountingRequest.addAttribute("Calling-Station-Id", USER_NAME);
             accountingRequest.addAttribute("Called-Station-Id", APN);
 
-//            VendorSpecificAttribute attribute = new VendorSpecificAttribute();
-//            attribute.setAttributeType(26);
-//            attribute.setVendorId(-1);
-//            attribute.setChildVendorId(14122);
-//            attribute.addSubAttribute("WISPr-Location-ID", "101010");
-//            accountingRequest.addAttribute(attribute);
-//
-//            VendorSpecificAttribute attribute2 = new VendorSpecificAttribute();
-//            attribute2.setAttributeType(26);
-//            attribute2.setVendorId(-1);
-//            attribute2.setChildVendorId(14122);
-//            attribute2.addSubAttribute("WISPr-Location-Name", "Test-Location");
-//            accountingRequest.addAttribute(attribute2);
             VendorSpecificAttribute vsa = new VendorSpecificAttribute(10415);
             vsa.addSubAttribute("3GPP-RAT-Type", String.valueOf(RAT_TYPE));
 
